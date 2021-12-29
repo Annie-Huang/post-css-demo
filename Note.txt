@@ -14,3 +14,8 @@ If you put:
 "postcss src/style.css -o style.min.css", it will just create the minified file in the same location
 
 postcss src/style.css --dir     ===     postcss src/style.css -d
+
+After adding:
+    require('postcss-preset-env'),
+    require('cssnano'),
+to postcss.config.js, the proper output public/style.css should be minified.
