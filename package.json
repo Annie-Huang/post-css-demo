@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/Annie-Huang/post-css-demo#readme",
   "devDependencies": {
+    "cssnano": "^5.0.14",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
-    "postcss-import": "^14.0.2"
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.1.0"
   }
 }
