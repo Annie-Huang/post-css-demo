@@ -16,6 +16,27 @@ If you put:
 postcss src/style.css --dir     ===     postcss src/style.css -d
 
 After adding:
-    require('postcss-preset-env'),
     require('cssnano'),
 to postcss.config.js, the proper output public/style.css should be minified.
+
+
+Stage 1: still in experimental
+Stage 2: ready to use...
+...
+Stage 4: just making sure all browsers are supporting it.
+
+Default is stage2.
+
+-----------------------
+require('postcss-preset-env')({stage: 1}),
+
+will turn:
+article {
+  background: purple;
+  & .title {font-size: 5rem;}
+}
+
+into (make nesting work):
+article .title{
+  font-size: 5rem;
+}
