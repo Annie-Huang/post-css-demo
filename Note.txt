@@ -7,3 +7,10 @@ Because Kevin didn't list his source file, i have to create the empty files to m
 
 PS C:\react\post-css-demo> npm i -D postcss postcss-cli
 PS C:\react\post-css-demo> npm i -D postcss-import
+PS C:\react\post-css-demo> npm run postcss:watch
+
+
+If you put:
+"postcss src/style.css -o style.min.css", it will just create the minified file in the same location
+
+postcss src/style.css --dir     ===     postcss src/style.css -d
